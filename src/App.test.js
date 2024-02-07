@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom'; 
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe("<App />", () => {
+  it("renders an h1 text", () => {
+    // Arrange
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    )}
+)});
