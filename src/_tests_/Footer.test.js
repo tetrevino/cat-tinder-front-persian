@@ -10,11 +10,8 @@ describe("<Footer />", () => {
         <Footer />
       </BrowserRouter>
     )
-    // Debugging 
-    // screen.debug()
-    // screen.logTestingPlaygroundURL()
-    // Act
-    const footer = screen.getByRole('contentinfo')
-    expect(footer).toBeInTheDocument()
+    const catFooter = screen.getByRole("img")
+    expect(catFooter).toHaveAttribute("src", "FooterImage.png")
+    expect(catFooter).toHaveAttribute("alt", "Footer")
   })
 })

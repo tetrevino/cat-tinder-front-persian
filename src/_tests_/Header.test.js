@@ -11,9 +11,10 @@ describe("<Header />", () => {
           <Header />
         </BrowserRouter>
       )
-    //   const catHeader = screen.getByRole("img")
-//   expect(catHeader).toHaveAttribute("src", "HeaderImage.png")
-//   expect(catHeader).toHaveAttribute("alt", "Header")
+      const catHeader = screen.getByRole("img")
+      expect(catHeader).toHaveAttribute("src", "HeaderImage.png")
+      expect(catHeader).toHaveAttribute("alt", "Header")
     })
 })
-    export default Header
+    
+export default Header

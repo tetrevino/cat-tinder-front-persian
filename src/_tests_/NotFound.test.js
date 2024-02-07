@@ -16,4 +16,4 @@ describe("<NotFound />", () => {
     expect(NoKittyImage).toHaveAttribute("src", NotFoundImage)
     expect(NoKittyImage).toHaveAttribute("alt", "Footer")
     })
-      })
+   })

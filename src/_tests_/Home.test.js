@@ -11,9 +11,8 @@ describe("<Home />", () => {
           <Home />
         </BrowserRouter>
       )
-    //   const catHeader = screen.getByRole("img")
-//   expect(catHeader).toHaveAttribute("src", "HeaderImage.png")
-//   expect(catHeader).toHaveAttribute("alt", "Header")
+      const homeText = screen.getByText("Home")
+      expect(homeText).toBeInTheDocument()
     })
 })
     export default Home
