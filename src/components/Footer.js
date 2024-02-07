@@ -1,5 +1,5 @@
 import React from "react";
-import FooterImage from './FooterImage.png'
+import FooterImage from '../assets/FooterImage.png'
 
 function Footer() {
     return (
@@ -8,5 +8,4 @@ function Footer() {
       </footer>
     );
   }
-  
-  export default Footer;
+export default Footer;

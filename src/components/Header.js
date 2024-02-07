@@ -1,4 +1,5 @@
-import HeaderImage from './HeaderImage.png'
+import React from 'react';
+import HeaderImage from '../assets/HeaderImage.png'
 
 function Header() {
     return (
@@ -7,5 +8,4 @@ function Header() {
       </header>
     );
   }
-  
-  export default Header;
+export default Header;
