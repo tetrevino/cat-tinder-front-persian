@@ -1,7 +1,7 @@
 import React from "react";
 import FooterImage from '../assets/FooterImage.png'
 
-function Footer() {
+const Footer = () => {
     return (
       <footer>
         <img src={FooterImage} alt="Footer" />

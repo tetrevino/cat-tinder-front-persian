@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderImage from '../assets/HeaderImage.png'
 
-function Header() {
+const Header = () => {
     return (
       <header>
         <img src={HeaderImage} alt="Header" />
