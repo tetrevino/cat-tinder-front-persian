@@ -8,15 +8,15 @@ return (
             return (
                 <>
                 <div key={cat.id}>
-                <img
-                src={cat.image}
-                alt="profile of all our cats friends"
-                className="cat-profile-pic"
-                />
+                    <img
+                    src={cat.image}
+                    alt="profile of all our cats friends"
+                    className="cat-profile-pic"
+                    />
                     <RouterNavLink to= {`/catshow/${cat.id}`}>
                      <p>{cat.name}</p>
-                    <p>{cat.age}</p>
-                </RouterNavLink>
+                     <p>{cat.age}</p>
+                    </RouterNavLink>
                 </div>
                 </>
             )
