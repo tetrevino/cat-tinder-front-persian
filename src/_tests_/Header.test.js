@@ -15,6 +15,15 @@ describe("<Header />", () => {
       expect(catHeader).toHaveAttribute("src", "HeaderImage.png")
       expect(catHeader).toHaveAttribute("alt", "Header")
     })
+    it("renders words", () => {
+      render(
+        <BrowserRouter>
+          <Header />
+        </BrowserRouter>
+      )
+      const catHeaderWords = screen.getByText("Adopt a Cat!")
+      expect(catHeaderWords).toBeInTheDocument()
+    })
 })
     
 export default Header

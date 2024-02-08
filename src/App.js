@@ -8,7 +8,6 @@ import CatShow from "./pages/CatShow"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import "./App.css"
-
 import { Routes, Route } from "react-router-dom"
 import mockCats from "./mockCats"
 
@@ -22,6 +21,7 @@ const App = () => {
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/catindex" element={<CatIndex />} />
           <Route path="/catshow" element={<CatShow />} />
           <Route path="/catnew" element={<CatNew />} />

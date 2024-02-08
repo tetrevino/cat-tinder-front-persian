@@ -2,7 +2,7 @@ import React from "react"
 
 const CatNew = () => {
 return (
-    <h1>Home Page</h1>
+    <h1>Cat New</h1>
 )
 
 }
