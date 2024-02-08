@@ -1,8 +1,25 @@
 import React from "react"
 
-const Catindex= () => {
+const Catindex= ({cats}) => {
+    console.log(cats)
 return (
-    <h1>Cat Index</h1>
+    <main>
+        {cats.map((cat, index) => {
+            return (
+                <>
+                <div key={cat.id}>
+                <img
+                src={cat.image}
+                alt="profile of all our cats friends"
+                className="cat-profile-pic"
+                />
+                    <p>{cat.name}</p>
+                    <p>{cat.age}</p>
+                </div>
+                </>
+            )
+        })}
+    </main>
 )
 
 }
