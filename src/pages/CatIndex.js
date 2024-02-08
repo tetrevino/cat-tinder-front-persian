@@ -1,10 +1,10 @@
 import React from "react"
-
+import { NavLink as RouterNavLink } from "react-router-dom"
 const Catindex= ({cats}) => {
-    console.log(cats)
+    
 return (
     <main>
-        {cats.map((cat, index) => {
+        {cats?.map((cat) => {
             return (
                 <>
                 <div key={cat.id}>
@@ -13,8 +13,10 @@ return (
                 alt="profile of all our cats friends"
                 className="cat-profile-pic"
                 />
-                    <p>{cat.name}</p>
+                    <RouterNavLink to= {`/catshow/${cat.id}`}>
+                     <p>{cat.name}</p>
                     <p>{cat.age}</p>
+                </RouterNavLink>
                 </div>
                 </>
             )

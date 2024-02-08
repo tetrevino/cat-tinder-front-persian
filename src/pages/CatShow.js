@@ -1,9 +1,23 @@
 import React from "react"
+import { useParams } from "react-router-dom"
 
-const CatShow = () => {
-return (
-    <h1>Cat Show</h1>
-)
-
-}
-export default CatShow
+const CatShow = ({ cats }) => {
+    const { id } = useParams()
+    const cat = cats.find((item) => item.id === +id)
+  
+    return (
+      <>
+        <h3>CatShow component</h3>
+        <img
+          src={cat?.image}
+          alt="profile of all our cats friends"
+          className="cat-profile-pic"
+        />
+        <p>{cat?.name}</p>
+        <p>{cat?.age}</p>
+        <p>{cat?.enjoys}</p>
+      </>
+    )
+  }
+  
+  export default CatShow
