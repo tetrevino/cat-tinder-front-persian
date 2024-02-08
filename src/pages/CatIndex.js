@@ -2,7 +2,7 @@ import React from "react"
 
 const Catindex= () => {
 return (
-    <h1>Home Page</h1>
+    <h1>Cat Index</h1>
 )
 
 }
