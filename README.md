@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Test for character limit
+<!-- #    it("enjoys has a character limit", () => {
+        
+        render(
+        <BrowserRouter>
+            <CatNew cats={mockCats} />
+        </BrowserRouter>
+        )
+        const catEnjoysLength = screen.getByPlaceholderText(/enter what/i)
+        expect(catEnjoysLength).toEqual ({ minLength:10})
+      })
+     -->

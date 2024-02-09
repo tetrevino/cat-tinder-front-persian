@@ -13,9 +13,9 @@ describe('<CatShow />', () => {
       const cat = "1" 
       render(
         <MemoryRouter initialEntries={[`/catshow/${cat}`]}>
-        <Routes>
-            <Route path="/catshow/:id" element={<CatShow cats={mockCats} />} />
-         </Routes>
+          <Routes>
+              <Route path="/catshow/:id" element={<CatShow cats={mockCats} />} />
+          </Routes>
         </MemoryRouter> 
       )
       const catName = screen.getByText(mockCats[0].name)
