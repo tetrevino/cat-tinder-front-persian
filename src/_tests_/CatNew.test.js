@@ -23,7 +23,9 @@ describe("<CatNew />", ()=>{
         )
     
    
-        const catButton = screen.getByRole('button')
+        const catButton = screen.getByRole('button', {
+            name: /submit/i
+        })
         expect(catButton).toBeInTheDocument()    
 
     })
@@ -36,5 +38,38 @@ describe("<CatNew />", ()=>{
         )
         const textBox = screen.getByPlaceholderText(/enter your cat's name/i)
         expect(textBox).toBeInTheDocument()
+    })
+
+    it("renders an age button", () => {
+        render(
+            <BrowserRouter>
+                <CatNew />
+            </BrowserRouter>
+        )
+        const ageButton = screen.getByRole('spinbutton')
+        expect(ageButton).toBeInTheDocument()
+    })
+
+    it("renders a textbox for the enjoys field", () => {
+        render(
+            <BrowserRouter>
+                <CatNew />
+            </BrowserRouter>
+        )
+        const enjoysBox = screen.getByPlaceholderText(/enter what your cat likes to do/i)
+        expect(enjoysBox).toBeInTheDocument()
+    })
+
+    it("renders an h3 element", () => {
+        render(
+           <BrowserRouter>
+                <CatNew />
+           </BrowserRouter> 
+        )
+        const headingText = screen.getByRole('heading', {
+            name: /add your cat info to make new cat friends/i
+        })
+        expect(headingText).toBeInTheDocument()
+
     })
 })
