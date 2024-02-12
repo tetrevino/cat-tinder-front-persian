@@ -10,15 +10,18 @@ const CatNew = ({ createCat }) => {
         enjoys: "",
         image: "" 
     })
+    
+const navigate = useNavigate()
+
 const handleChange = (e) => {
     setCatFormData({...catFormData, [e.target.name]: e.target.value })  
 }
+
 const handleSubmit = () => {
     createCat(catFormData)
     navigate("/catindex")
 }
 
-const navigate = useNavigate()
 
 return (
     <>
