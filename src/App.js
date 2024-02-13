@@ -9,7 +9,7 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import "./App.css"
 import { Routes, Route } from "react-router-dom"
-import mockCats from "./mockCats"
+// import mockCats from "./mockCats"
 import { useEffect } from "react" 
 
 const App = () => {
@@ -38,7 +38,10 @@ const App = () => {
       .then(() => readCat())
       .catch((errors) => console.log("Cat create errors:", errors))
   }
-
+  const updateCat = (cat, id) => {
+    console.log("cat:", cat)
+    console.log("id:", id)
+  }
   console.log(cats)
   return (
     <>
