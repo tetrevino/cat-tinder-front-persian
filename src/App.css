@@ -23,8 +23,6 @@ div {
   color: black;
   display: flex;
   flex-wrap: wrap;
-  /* max-height: 100%;
-  max-width: 100%; */
   position: relative;
 }
 

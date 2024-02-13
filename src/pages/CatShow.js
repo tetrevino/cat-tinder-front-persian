@@ -17,12 +17,10 @@ const CatShow = ({ cats }) => {
           />
           <p>{cat?.name}</p>
           <p>{cat?.age}</p>
-          <p>{cat?.enjoys}</p>
-        <button>  
+          <p>{cat?.enjoys}</p> 
           <RouterNavLink to={`/catedit/${cat?.id}`} className="nav-link">
           <p>Edit {cat?.name}</p>
           </RouterNavLink>
-        </button>
         </div>
       </div>
     )
