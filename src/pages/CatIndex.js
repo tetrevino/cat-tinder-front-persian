@@ -4,13 +4,13 @@ import { CardGroup, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle }
 const Catindex= ({cats}) => {
     
 return (
-    <main>
+    <main className = "cat-profile-pic">
         {cats?.map((cat) => {
             return (
                 <>
                     <CardGroup>
                         <Card>
-                         <RouterNavLink to= {`/catshow/${cats.id}`}>  
+                         <RouterNavLink to= {`/catshow/${cat.id}`}>  
                             <CardImg
                             alt="profile of all our cats friends"
                             src={cat.image}
@@ -31,7 +31,7 @@ return (
                             <h5>Enjoys: {cat.enjoys}</h5>
                             </CardText>
                          </CardBody>
-                        </Card>
+                        </Card> 
                     </CardGroup>
                 </>
             )

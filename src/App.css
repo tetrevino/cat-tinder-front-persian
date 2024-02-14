@@ -1,6 +1,11 @@
 Body{
   background-image: url("./assets/BackgroundImage.png");
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a:hover {
@@ -29,7 +34,8 @@ div {
 .cat-profile-pic {
   border-radius: 10px;
   box-shadow: rgb(0 0 0);
-  height: 12rem;
+  max-height: 100px;
+  max-width: 300px;
   margin-bottom: 20px;
   margin-right: 10px;
 }
@@ -47,7 +53,7 @@ div {
 
 main-content-image {
   width: 10rem;
-  height: 12rem;
+  height: 20rem;
 }
 
 .card {
@@ -66,3 +72,18 @@ main-content-image {
   flex-wrap: wrap;
 }
 
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
